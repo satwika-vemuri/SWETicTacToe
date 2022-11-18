@@ -1,0 +1,28 @@
+# Starting compiling UnityEngine.TestRunner.dll
+/home/yoda/Unity/Hub/Editor/2020.3.41f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-9e26d796d48dba4239de0b75cc605036
+# Starting compiling UnityEngine.UI.dll
+/home/yoda/Unity/Hub/Editor/2020.3.41f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-f6a4de1efaf8efb96b532fb42e96a800
+# Starting compiling UnityEditor.TestRunner.dll
+/home/yoda/Unity/Hub/Editor/2020.3.41f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-ea5efbb81808354e8b242de39f9f44d6
+# Starting compiling UnityEditor.UI.dll
+/home/yoda/Unity/Hub/Editor/2020.3.41f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-a63f2a9175f2d816c9666edc825c7278
+# Starting compiling Unity.Services.Core.Editor.dll
+/home/yoda/Unity/Hub/Editor/2020.3.41f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-50f401987ee3fe1808c75cf7558f276c
+# Starting compiling Unity.VSCode.Editor.dll
+/home/yoda/Unity/Hub/Editor/2020.3.41f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-9ffe11dcab8e1f538b7b0816d4b51603
+# Starting compiling Unity.VisualStudio.Editor.dll
+/home/yoda/Unity/Hub/Editor/2020.3.41f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-f941d4274569348c393cc1caeae5d969
+# Starting compiling Unity.Timeline.dll
+/home/yoda/Unity/Hub/Editor/2020.3.41f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-e094e6c81ef9b4850a9c702102d831e6
+# Starting compiling Unity.TextMeshPro.dll
+/home/yoda/Unity/Hub/Editor/2020.3.41f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-5df9bc09abeab749c9d3f18b2bdd79a4
+# Starting compiling Unity.PlasticSCM.Editor.dll
+/home/yoda/Unity/Hub/Editor/2020.3.41f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-206de668b06b92fcfa58f9e8303a11a7
+# Starting compiling Unity.Rider.Editor.dll
+/home/yoda/Unity/Hub/Editor/2020.3.41f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-584bf3a8722d42801b890ea75152e1d8
+# Starting compiling Unity.Timeline.Editor.dll
+/home/yoda/Unity/Hub/Editor/2020.3.41f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-fa332fafc337964d09e503aae80fa76d
+# Starting compiling Unity.CollabProxy.Editor.dll
+/home/yoda/Unity/Hub/Editor/2020.3.41f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-5aece7db5aab11229a2abfa083dd40b0
+# Starting compiling Unity.TextMeshPro.Editor.dll
+/home/yoda/Unity/Hub/Editor/2020.3.41f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-b113440442f6f2fe2807018356780d51
