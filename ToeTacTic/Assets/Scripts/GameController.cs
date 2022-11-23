@@ -14,11 +14,14 @@ public class GameController : MonoBehaviour
     public float[] xPositionsList = new float[9];
     public float[] yPositionsList = new float[9];
 
-    public string turn = "X";
+    public enum Turn{X,O};
+    public Turn turn;
 
     // Start is called before the first frame update
     void Start()
     {
+
+        turn = Turn.X;
         //Instantiate(playboxOriginal, new Vector3(0, 0, 0), playboxOriginal.transform.rotation);
         
         createBoard();
@@ -71,24 +74,18 @@ public class GameController : MonoBehaviour
     //creates an X or O sprite at the specified xPos and yPos
     void FunctionOnClick(float xPos, float yPos)
     {
-        if(turn == "X")
+        if(turn == Turn.X)
         {
             GameObject XClone = Instantiate(XOriginal, new Vector3(xPos, yPos, 0), XOriginal.transform.rotation);
             XClone.transform.SetParent(GameObject.FindGameObjectWithTag("Canvas").transform, false);
-            turn = "O";
+            turn = Turn.O;
         }    
         else
         {
             GameObject OClone = Instantiate(OOriginal, new Vector3(xPos, yPos, 0), OOriginal.transform.rotation);
             OClone.transform.SetParent(GameObject.FindGameObjectWithTag("Canvas").transform, false);
-            turn = "X";
+            turn = Turn.X;
         }
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
         
     }
 }
