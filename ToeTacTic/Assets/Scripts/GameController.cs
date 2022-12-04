@@ -81,8 +81,6 @@ public class GameController : MonoBehaviour
             GameObject XClone = Instantiate(XOriginal, new Vector3(xPos, yPos, 0), XOriginal.transform.rotation);
             XClone.transform.SetParent(GameObject.FindGameObjectWithTag("Canvas").transform, false);
             addToGrid(xPos, yPos); 
-            Debug.Log(xPos);
-            Debug.Log(yPos);
             turn = Turn.O;
         }    
         else
@@ -90,8 +88,6 @@ public class GameController : MonoBehaviour
             GameObject OClone = Instantiate(OOriginal, new Vector3(xPos, yPos, 0), OOriginal.transform.rotation);
             OClone.transform.SetParent(GameObject.FindGameObjectWithTag("Canvas").transform, false);
             addToGrid(xPos, yPos); 
-            Debug.Log(xPos); 
-            Debug.Log(yPos); 
             turn = Turn.X;
         }
         
@@ -166,7 +162,7 @@ public class GameController : MonoBehaviour
     }
     void putEndText(string winner) 
     {
-        //Debug.Log("Game WON");
+        Debug.Log("Game WON");
         GameObject gameObject = new GameObject(); 
         gameObject.transform.SetParent(this.transform);
         gameObject.AddComponent<Text>().text = "WINNER: " + winner; 
