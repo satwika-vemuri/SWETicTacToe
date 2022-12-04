@@ -24,7 +24,6 @@ public class GameController : MonoBehaviour
     {
 
         turn = Turn.X;
-        //Instantiate(playboxOriginal, new Vector3(0, 0, 0), playboxOriginal.transform.rotation);
         
         createBoard();
                 
@@ -76,21 +75,32 @@ public class GameController : MonoBehaviour
     //creates an X or O sprite at the specified xPos and yPos
     void FunctionOnClick(float xPos, float yPos)
     {
-        if(turn == Turn.X)
+        if(playboxIsEmpty(xPos, yPos))
         {
-            GameObject XClone = Instantiate(XOriginal, new Vector3(xPos, yPos, 0), XOriginal.transform.rotation);
-            XClone.transform.SetParent(GameObject.FindGameObjectWithTag("Canvas").transform, false);
-            addToGrid(xPos, yPos); 
-            turn = Turn.O;
-        }    
-        else
-        {
-            GameObject OClone = Instantiate(OOriginal, new Vector3(xPos, yPos, 0), OOriginal.transform.rotation);
-            OClone.transform.SetParent(GameObject.FindGameObjectWithTag("Canvas").transform, false);
-            addToGrid(xPos, yPos); 
-            turn = Turn.X;
+            if(turn == Turn.X)
+            {
+                GameObject XClone = Instantiate(XOriginal, new Vector3(xPos, yPos, 0), XOriginal.transform.rotation);
+                XClone.transform.SetParent(GameObject.FindGameObjectWithTag("Canvas").transform, false);
+                addToGrid(xPos, yPos); 
+                turn = Turn.O;
+            }    
+            else
+            {
+                GameObject OClone = Instantiate(OOriginal, new Vector3(xPos, yPos, 0), OOriginal.transform.rotation);
+                OClone.transform.SetParent(GameObject.FindGameObjectWithTag("Canvas").transform, false);
+                addToGrid(xPos, yPos); 
+                turn = Turn.X;
+            }
         }
-        
+    }
+
+    bool playboxIsEmpty(float xPos, float yPos){
+        if(grid[findXCoordinate(xPos), findYCoordinate(yPos)] != 0)
+        {
+            return false;
+        }
+
+        return true;
     }
     
 
@@ -99,20 +109,32 @@ public class GameController : MonoBehaviour
         // 1 = X, 2 = O
         int symbol = (turn == Turn.X) ? 1 : 2;
 
+        
+        grid[findXCoordinate(xPos), findYCoordinate(yPos)] = symbol; 
+        
+        checkWinStatus(); 
+    }
+
+    int findXCoordinate(float xPos)
+    {
         int xCoord = 0;  
-        int yCoord = 0; 
 
         if (Math.Abs(xPos+334.1088)<1) xCoord = 0; 
         else if (Math.Abs(xPos+34.10876)<1) xCoord = 1; 
         else if (Math.Abs(xPos-265.8912)<1) xCoord = 2; 
 
+        return xCoord;
+    }
+
+    int findYCoordinate(float yPos)
+    {
+        int yCoord = 0;  
+
         if (Math.Abs(yPos-234.306)<1) yCoord = 0; 
         else if (Math.Abs(yPos+65.6939)<1) yCoord = 1; 
         else if (Math.Abs(yPos+365.694)<1) yCoord = 2;
 
-        grid[xCoord,yCoord] = symbol; 
-        
-        checkWinStatus(); 
+        return yCoord;
     }
 
     void checkWinStatus() 
