@@ -1,0 +1,2 @@
+# Starting compiling Scripts.dll
+/home/yoda/Unity/Hub/Editor/2020.3.41f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-5aaba6ef66b230e34bf604484a65f04d

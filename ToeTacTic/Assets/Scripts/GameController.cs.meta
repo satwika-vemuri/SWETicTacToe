@@ -3,7 +3,12 @@ guid: 8acf1e386acf577448c3faeabda86abd
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - playboxOriginal: {instanceID: 0}
+  - XOriginal: {instanceID: 0}
+  - OOriginal: {instanceID: 0}
+  - BlackSquare: {instanceID: 0}
+  - resetButton: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

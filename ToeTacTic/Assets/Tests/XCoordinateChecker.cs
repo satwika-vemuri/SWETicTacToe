@@ -21,6 +21,6 @@ public class XCoordinateChecker
     public void ChecksXCoordinate2()
     {
         int xCoord = XCoordinateFinder.findXCoordinate((float) 265.89);
-        Assert.AreEqual(2, xCoord);
+        Assert.AreEqual(2, xCoord); 
     }
 }
